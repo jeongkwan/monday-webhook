@@ -46,6 +46,49 @@ const accessTokens = new Map();
 accessTokens.set("51177148","eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjM1NzM0MTY4OCwiYWFpIjoxMSwidWlkIjo1MTE3NzE0OCwiaWFkIjoiMjAyNC0wNS0wOFQyMzoyMDoyMS4zNDZaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTM1MzY5ODEsInJnbiI6InVzZTEifQ.CejYiVIb9H3bp_vzUzFGyAStozfKhNKEwlx3t995uhQ");
 
 
+
+const username = new Map();
+
+// JEONGKWAN
+username.set("51179301","이정관");
+
+// KYUBONG
+username.set("51179302","이규봉");
+
+// GWANGSU
+username.set("51179274","김광수");
+
+// SEJONG
+username.set("51182059","류세종");
+
+
+// YUMI
+username.set("51124874","김유미");
+
+// SEUNGKWON
+username.set("51179281","김승권");
+
+// KWANHYUN
+username.set("50851168","김관현");
+
+// EUNKYUNG
+username.set("51186690","김은경");
+
+// NAMSU
+username.set("51179282","박남수");
+
+// YONGMIN
+username.set("51179316","김용민");
+
+
+// BYUNGJU
+username.set("51179280","박병주");
+
+// HOSEUNG
+username.set("51177148","이호승");
+
+
+
 app.use(bodyParser.json());
 
 app.post("/", async function(req, res) {
@@ -57,13 +100,14 @@ app.post("/", async function(req, res) {
     if(req.body.event.type != "create_update")
       return;
 
-//    let userId = req.body.event.userId.toString();
+    let userId = req.body.event.userId.toString();
 
 
 //    if(!accessTokens.has(userId))
 //      return;
 //    let auth = accessTokens.get(userId);
     let auth = accessTokens.get("51177148");
+    let uname = username.get(userId);
 
     let itemquery = "query { items (ids: [" + req.body.event.pulseId + "]) { name }}"; 
 
@@ -79,7 +123,7 @@ app.post("/", async function(req, res) {
         })
          .then(res => res.json())
          .then(res => {
-          let bodyText = "<p>### COPIED FROM SUB ITEM ###</p><p><span style='color: rgb(0, 163, 89);' data-redactor-style-cache='color: rgb(0, 163, 89);'>서브아이템 '"+ res.data.items[0].name +"'에 업데이트된 내용입니다.</span></p>" + req.body.event.body.replace("\\", '').replace(/\"/g, "'");
+          let bodyText = "<p>### AUTO COPIED FROM SUB ITEM ###</p><p><span style='color: rgb(0, 163, 89);' data-redactor-style-cache='color: rgb(0, 163, 89);'>" + username + "님이 서브아이템 '"+ res.data.items[0].name +"'에 업데이트한 내용입니다.</span></p>" + req.body.event.body.replace("\\", '').replace(/\"/g, "'");
           console.log(bodyText);
     
           let query = "mutation {create_update (item_id: " + req.body.event.parentItemId + ", body: \"" + bodyText + "\") { id }}";
