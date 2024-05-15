@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "monday-sdk-js": "^0.5.5"
+  },
+  "name": "webhook",
+  "version": "1.0.0",
+  "main": "webhook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
