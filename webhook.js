@@ -123,7 +123,7 @@ app.post("/", async function(req, res) {
         })
          .then(res => res.json())
          .then(res => {
-          let bodyText = "<p>### AUTO COPIED FROM SUB ITEM ###</p><p><span style='color: rgb(0, 163, 89);' data-redactor-style-cache='color: rgb(0, 163, 89);'>" + uname + "</span><span style='color: rgb(0, 89, 163);' data-redactor-style-cache='color: rgb(0, 89, 163);'>님이 서브아이템 <span style='color: rgb(0, 163, 89);' data-redactor-style-cache='color: rgb(0, 163, 89);'>'"+ res.data.items[0].name +"'</span><span style='color: rgb(0, 89, 163);' data-redactor-style-cache='color: rgb(0, 89, 163);'>에 업데이트한 내용입니다.</span></p>" + req.body.event.body.replace("\\", '').replace(/\"/g, "'");
+          let bodyText = "<p>### AUTO COPIED FROM SUB ITEM ###</p><p><span style='color: rgb(0, 163, 89);' data-redactor-style-cache='color: rgb(0, 163, 89);'>" + uname + "</span><span style='color: rgb(0, 89, 163);' data-redactor-style-cache='color: rgb(0, 89, 163);'>님이 서브아이템 <span style='color: rgb(0, 163, 89);' data-redactor-style-cache='color: rgb(0, 163, 89);'>'"+ res.data.items[0].name +"'</span><span style='color: rgb(0, 89, 163);' data-redactor-style-cache='color: rgb(0, 89, 163);'>에 업데이트한 내용입니다.</span></p><hr>" + req.body.event.body.replace("\\", '').replace(/\"/g, "'");
           console.log(bodyText);
     
           let query = "mutation {create_update (item_id: " + req.body.event.parentItemId + ", body: \"" + bodyText + "\") { id }}";
