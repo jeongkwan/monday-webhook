@@ -50,42 +50,42 @@ accessTokens.set("51177148","eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjM1NzM0MTY4OCwiYWFpIj
 const username = new Map();
 
 // JEONGKWAN
-username.set("51179301","이정관");
+username.set("51179301","이정관(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51179301-jeongkwan-lee1-ibm-com' data-mention-type='User' data-mention-id='51179301' target='_blank' rel='noopener noreferrer'>@Jeongkwan.Lee1@ibm.com</a>)");
 
 // KYUBONG
-username.set("51179302","이규봉");
+username.set("51179302","이규봉(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51179302-kyblee-kr-ibm-com' data-mention-type='User' data-mention-id='51179302' target='_blank' rel='noopener noreferrer'>@kyblee@kr.ibm.com</a>)");
 
 // GWANGSU
-username.set("51179274","김광수");
+username.set("51179274","김광수(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51179274-gwangsu-kim-ibm-com' data-mention-type='User' data-mention-id='51179274' target='_blank' rel='noopener noreferrer'>@Gwangsu.Kim@ibm.com</a>)");
 
 // SEJONG
-username.set("51182059","류세종");
+username.set("51182059","류세종(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51182059-sejong-ryu-ibm-com' data-mention-type='User' data-mention-id='51182059' target='_blank' rel='noopener noreferrer'>@Sejong.Ryu@ibm.com</a>)");
 
 
 // YUMI
-username.set("51124874","김유미");
+username.set("51124874","김유미(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51124874-yumi-kim1-ibm-com' data-mention-type='User' data-mention-id='51124874' target='_blank' rel='noopener noreferrer'>@Yumi.Kim1@ibm.com</a>)");
 
 // SEUNGKWON
-username.set("51179281","김승권");
+username.set("51179281","김승권(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51179281-braunkim-kr-ibm-com' data-mention-type='User' data-mention-id='51179281' target='_blank' rel='noopener noreferrer'>@braunkim@kr.ibm.com</a>)");
 
 // KWANHYUN
-username.set("50851168","김관현");
+username.set("50851168","김관현(<a class='user_mention_editor router' href='https://ibm.monday.com/users/50851168-kwanhyun-kim-ibm-com' data-mention-type='User' data-mention-id='50851168' target='_blank' rel='noopener noreferrer'>@Kwanhyun.Kim@ibm.com</a>)");
 
 // EUNKYUNG
-username.set("51186690","김은경");
+username.set("51186690","김은경(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51186690-eunkyung-kim' data-mention-type='User' data-mention-id='51186690' target='_blank' rel='noopener noreferrer'>@EunKyung Kim</a>)");
 
 // NAMSU
-username.set("51179282","박남수");
+username.set("51179282","박남수(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51179282-namsu-park-ibm-com' data-mention-type='User' data-mention-id='51179282' target='_blank' rel='noopener noreferrer'>@Namsu.Park@ibm.com</a>)");
 
 // YONGMIN
-username.set("51179316","김용민");
+username.set("51179316","김용민(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51179316-kimym-kr-ibm-com' data-mention-type='User' data-mention-id='51179316' target='_blank' rel='noopener noreferrer'>@kimym@kr.ibm.com</a>)");
 
 
 // BYUNGJU
-username.set("51179280","박병주");
+username.set("51179280","박병주(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51179280-byungjoo-park-ibm-com' data-mention-type='User' data-mention-id='51179280' target='_blank' rel='noopener noreferrer'>@ByungJoo.Park@ibm.com</a>)");
 
 // HOSEUNG
-username.set("51177148","이호승");
+username.set("51177148","이호승(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51177148-hsl-kr-ibm-com' data-mention-type='User' data-mention-id='51177148' target='_blank' rel='noopener noreferrer'>@hsl@kr.ibm.com</a>)");
 
 
 
