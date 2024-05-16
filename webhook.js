@@ -91,6 +91,10 @@ username.set("51177148","이호승(<a class='user_mention_editor router' href='h
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 app.post("/", async function(req, res) {
     console.log(JSON.stringify(req.body, 0, 2));
     res.status(200).send(req.body);
