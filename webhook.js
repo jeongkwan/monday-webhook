@@ -98,7 +98,7 @@ app.get('/', (req, res) => {
 app.post("/", async function(req, res) {
     console.log(JSON.stringify(req.body, 0, 2));
     res.status(200).send(req.body);
-    if("challenge" in req.body)
+    if(("challenge" in req.body) || !("event" in req.body) || !("type" in req.body.event))
       return;
 
     if(req.body.event.type != "create_update")
