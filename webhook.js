@@ -88,7 +88,6 @@ username.set("51179280","박병주(<a class='user_mention_editor router' href='h
 username.set("51177148","이호승(<a class='user_mention_editor router' href='https://ibm.monday.com/users/51177148-hsl-kr-ibm-com' data-mention-type='User' data-mention-id='51177148' target='_blank' rel='noopener noreferrer'>@hsl@kr.ibm.com</a>)");
 
 
-
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
