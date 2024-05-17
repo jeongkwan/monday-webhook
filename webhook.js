@@ -101,10 +101,7 @@ app.head("/",(req,res)=>{
 app.post("/", async function(req, res) {
     console.log(JSON.stringify(req.body, 0, 2));
     res.status(200).send(req.body);
-    if(("challenge" in req.body) || !("event" in req.body) || !("type" in req.body.event))
-      return;
-
-    if(req.body.event.type != "create_update")
+    if(("challenge" in req.body) || !("event" in req.body) || !("type" in req.body.event) || req.body.event.type != "create_update" || !("parentItemId" in req.body.event))
       return;
 
     let userId = req.body.event.userId.toString();
