@@ -95,6 +95,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.head("/",(req,res)=>{
+  res.set('x-user', 'jeongkwan')
+})
+
 app.post("/", async function(req, res) {
     console.log(JSON.stringify(req.body, 0, 2));
     res.status(200).send(req.body);
