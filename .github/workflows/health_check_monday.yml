@@ -14,7 +14,7 @@ jobs:
         uses: jtalk/url-health-check-action@v4
         with:
           # Check the following URLs one by one sequentially
-          url: ${{ secrets.RELEASE_URI }}
+          url: https://monday-webhook-93sj.onrender.com
           # Follow redirects, or just report success on 3xx status codes
           follow-redirect: false # Optional, defaults to "false"
           # Fail this action after this many failed attempts
